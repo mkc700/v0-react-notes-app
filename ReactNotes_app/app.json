@@ -24,6 +24,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "expo": {
+      "name": "FRIGA",
+      "slug": "FRIGA",
+      "icon": "./resources/LOGO.jpeg"
+  }
   }
 }
