@@ -9,6 +9,8 @@ import Timers from '../screens/Notes_dev/Timers';
 import Calendar from '../screens/Notes_dev/Calendar';
 import Lists from '../screens/Notes_dev/Lists';
 import Settings from '../screens/Notes_dev/Settings';
+import { Ionicons } from '@expo/vector-icons';
+import { View, TouchableOpacity } from 'react-native';
 
 // Puedes añadir aquí otras pantallas que pertenezcan a la sección Notes
 
@@ -24,12 +26,17 @@ export default function DrawerNavigator() {
         drawerStyle: { width: 260 },
       }}
     >
+
       <Drawer.Screen
         name="notes_main"
         component={NotesScreen}
         options={({ navigation }) => ({
           title: 'Notas',
-          headerLeft: () => <Button title="☰" onPress={() => navigation.toggleDrawer()} />,
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={{ marginLeft: 16 }}>
+              <Ionicons name="menu" size={28} color="#333" />
+            </TouchableOpacity>
+          ),
         })}
       />
 
@@ -38,7 +45,11 @@ export default function DrawerNavigator() {
         component={Timers}
         options={({ navigation }) => ({
           title: 'Timers',
-          headerLeft: () => <Button title="☰" onPress={() => navigation.toggleDrawer()} />,
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={{ marginLeft: 16 }}>
+              <Ionicons name="menu" size={28} color="#333" />
+            </TouchableOpacity>
+          ),
         })}
       />
 
@@ -47,7 +58,11 @@ export default function DrawerNavigator() {
         component={Calendar}
         options={({ navigation }) => ({
           title: 'Calendar',
-          headerLeft: () => <Button title="☰" onPress={() => navigation.toggleDrawer()} />,
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={{ marginLeft: 16 }}>
+              <Ionicons name="menu" size={28} color="#333" />
+            </TouchableOpacity>
+          ),
         })}
       />
 
@@ -56,7 +71,11 @@ export default function DrawerNavigator() {
         component={Lists}
         options={({ navigation }) => ({
           title: 'Lists',
-          headerLeft: () => <Button title="☰" onPress={() => navigation.toggleDrawer()} />,
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={{ marginLeft: 16 }}>
+              <Ionicons name="menu" size={28} color="#333" />
+            </TouchableOpacity>
+          ),
         })}
       />
 
@@ -65,7 +84,11 @@ export default function DrawerNavigator() {
         component={Settings}
         options={({ navigation }) => ({
           title: 'Settings',
-          headerLeft: () => <Button title="☰" onPress={() => navigation.toggleDrawer()} />,
+          headerLeft: () => (
+            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={{ marginLeft: 16 }}>
+              <Ionicons name="menu" size={28} color="#333" />
+            </TouchableOpacity>
+          ),
         })}
       />
 
