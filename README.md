@@ -13,3 +13,8 @@ git reset --hard HEAD~1
 descarta cambios de un archivo que aun no guardas
 
 git restore <archivo>
+
+
+para la instalacion basica de desarrollo de esta aplicacion, hicimos uso de npm 
+
+npx react-native@latest init TuNombreDeApp
