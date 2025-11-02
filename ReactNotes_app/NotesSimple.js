@@ -1,3 +1,5 @@
+// archivo de prueba IGNORADO temporalmente para notas simples
+
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';

@@ -13,13 +13,11 @@ export default function LoginScreen({ navigation }) {
       <View style={styles.body} TextID="body">
         <Text>esta es la ventana de login</Text>
         
-        <View style={styles.buttonWrapper}> 
-        <Button title="Regresar a home" onPress={() => navigation.navigate('Home')} />
-        </View>
-
-        <View style={styles.buttonWrapper}>
-        <Button title="Entrar a la aplicacion" onPress={() => navigation.navigate('Notes')} />
-        </View>
+        
+        <Button title="Regresar a home" onPress={() => navigation.navigate('Home')} style={styles.button} />
+      
+        <Button title="Entrar a la aplicacion" onPress={() => navigation.navigate('Notes')} style={styles.button}  />
+        
       </View>
       <View style={styles.footer} TextID="footer">
 
@@ -29,12 +27,18 @@ export default function LoginScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  background: { display: 'flex', flexDirection: 'Column' , backgroundColor: "#fff" },
-  header:{ padding: 10, backgroundColor: "#f0f0f0", height: "20%" },
-  body: { flex: 1, padding: 10, height: "60%" },
-  footer: { padding: 10, backgroundColor: "#f0f0f0", maxHeight: 150, height: "20%" },
-  flexContainer: { flex: 1 },
-  buttonWrapper: { width: '60%', marginVertical: 8 },
+  background: { 
+    display: 'flex', 
+    flexDirection: 'Column' ,
+    backgroundColor: "#fff",  
+  },
+
+  header:{ backgroundColor: "#f0f0f0", height: "20%" },
+  body: { Height: "60%" },
+  footer: {backgroundColor: "#f0f0f0", Height: 150, height: "20%" },
+
+  button: { width: '60%', marginVertical: 8, justifyContent: 'center', },
+
 });
 
 // en este punto: para android cambie los styles de flexcontainer a body, header y footer respectivamente 

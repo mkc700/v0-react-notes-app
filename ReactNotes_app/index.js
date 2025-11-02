@@ -22,8 +22,4 @@ App.js solo conoce a routes.js (y al NavigationContainer).
 
 routes.js solo conoce tus pantallas (HomeScreen, principal.js).
 
-
-
-
-
 */

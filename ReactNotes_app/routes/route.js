@@ -16,7 +16,7 @@ export default function AppNavigator() {
       <Stack.Navigator
         screenOptions={{
           // mostramos header pero ocultamos el botón "back" y desactivamos gestos
-          headerShown: true,
+          headerShown: false,
           headerBackVisible: false,
           // Asegura que no se renderice nada a la izquierda (sin back icon)
           headerLeft: () => null,
