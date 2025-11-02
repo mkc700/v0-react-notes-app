@@ -1,23 +1,27 @@
+import React from 'react';
+import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { ScrollView } from 'react-native-web';
 
-export default function App() {
+
+export default function NotesScreen({ navigation }) {
   return (
     <View style={styles.background}>
       <View style={styles.flexContainer}>
       <View textID="header" style={styles.header}>
         <Text>este es el header</Text>
         <StatusBar style="auto" />
-        <button title="hola" style={styles.button} />
       </View>
       <View textID="body" style={styles.body}>
+      <Button
+                  title="Regresar"
+                  onPress={() => navigation.navigate('Home')} 
+                />
         <Text>este es el cuerpo</Text>
       </View>
       <View style={styles.footer} textID="footer">
       <ScrollView>
         <Text>este es el footer</Text>
-        <text>
+        <Text>
           Lorem Ipsum is a type of placeholder text commonly used in the
           printing and typesetting industry. It has been the standard dummy text
           since the 1500s, originating from a scrambled version of a work by a
@@ -27,7 +31,7 @@ export default function App() {
           presentations. Lorem Ipsum +3 Lorem Ipsum Lorem Ipsum - All the facts
           - Lipsum generator Solopress UK ¿Qué es Lorem Ipsum y por qué se
           utiliza? - Solopress Ver todo
-        </text>
+        </Text>
         </ScrollView>
       </View>
       </View>
