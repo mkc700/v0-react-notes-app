@@ -1,22 +1,34 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView, Button} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
+import { Drawer } from 'react-native-drawer-layout';
+import { Button } from '@react-navigation/elements';
+
 
 
 export default function NotesScreen({ navigation }) {
+  const [open, setOpen] = React.useState(false);
   return (
    
+    <View style={styles.container}>
     <View style={styles.background}>
       <View style={styles.flexContainer}>
       <View textID="header" style={styles.header}>
         <Text>este es el header</Text>
         <StatusBar style="auto" />
       </View>
-      <View textID="body" style={styles.body}>
-      <Button title="Regresar" onPress={() => navigation.navigate('Home')} />
+      //__________________________________________________________________________________
+        <Button title="Abrir/Cerrar drawer" onPress={() => navigation.toggleDrawer()} />
+    
+        
+        <Button title="Regresar" onPress={() => navigation.navigate('Home')} />
                
         <Text>este es el cuerpo</Text>
+
+
+
       </View>
+      //__________________________________________________________________________________
       <View style={styles.footer} textID="footer">
       <ScrollView>
         <Text>este es el footer</Text>
@@ -35,12 +47,15 @@ export default function NotesScreen({ navigation }) {
       </View>
       </View>
     </View>
- 
-
-  );
-}
-
+    );
+  }
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: '#fff'
+  },
   background: {
     backgroundColor: '#7f87a1ff',
     height: '100%',

@@ -6,7 +6,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/Inicio';
 import LoginScreen from '../screens/Login';
 import SignupScreen from '../screens/Signup';
-import NotesScreen from '../screens/Notes_dev/Notes';
+import DrawerNavigator from './drawer';
 
 const Stack = createNativeStackNavigator();
 
@@ -34,8 +34,8 @@ export default function AppNavigator() {
         />
         <Stack.Screen 
           name="Notes"
-          component={NotesScreen}
-          options={{ title: 'aplicacion'}} // Ocultamos el header del Stack aquí porque usaremos el del Drawer
+          component={DrawerNavigator}
+          options={{ headerShown: false }} // Usamos el header del Drawer/Stack interno
         />
         <Stack.Screen 
           name="Login" 

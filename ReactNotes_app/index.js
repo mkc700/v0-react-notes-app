@@ -1,3 +1,5 @@
+// react-native-gesture-handler must be imported at the top-level before any navigation
+import 'react-native-gesture-handler';
 import { registerRootComponent } from 'expo';
 
 import App from './forge';
