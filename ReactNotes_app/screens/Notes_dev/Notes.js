@@ -1,10 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, ScrollView, Button } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Button} from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 
 export default function NotesScreen({ navigation }) {
   return (
+   
     <View style={styles.background}>
       <View style={styles.flexContainer}>
       <View textID="header" style={styles.header}>
@@ -12,10 +13,8 @@ export default function NotesScreen({ navigation }) {
         <StatusBar style="auto" />
       </View>
       <View textID="body" style={styles.body}>
-      <Button
-                  title="Regresar"
-                  onPress={() => navigation.navigate('Home')} 
-                />
+      <Button title="Regresar" onPress={() => navigation.navigate('Home')} />
+               
         <Text>este es el cuerpo</Text>
       </View>
       <View style={styles.footer} textID="footer">
@@ -36,6 +35,8 @@ export default function NotesScreen({ navigation }) {
       </View>
       </View>
     </View>
+ 
+
   );
 }
 
@@ -85,3 +86,5 @@ const styles = StyleSheet.create({
   },
 
 });
+
+

@@ -7,16 +7,16 @@ import { StyleSheet, Text, View, ScrollView, Button } from "react-native";
 export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.background}>
-      <View style={styles.flexContainer} TextID="header">
+      <View style={styles.header} TextID="header">
 
       </View>
-      <View style={styles.flexContainer} TextID="body">
+      <View style={styles.body} TextID="body">
         <Text>esta es la ventana de login</Text>
         <Button title="Regresar a home" onPress={() => navigation.navigate('Home')} />
-        <br></br>
+        
         <Button title="Entrar a la aplicacion" onPress={() => navigation.navigate('Notes')} />
       </View>
-      <View style={styles.flexContainer} TextID="footer">
+      <View style={styles.footer} TextID="footer">
 
       </View>
     </View>
@@ -30,3 +30,5 @@ const styles = StyleSheet.create({
   footer: { padding: 10, backgroundColor: "#f0f0f0", maxHeight: 150, height: "20%" },
   flexContainer: { flex: 1 },
 });
+
+// en este punto: para android cambie los styles de flexcontainer a body, header y footer respectivamente 

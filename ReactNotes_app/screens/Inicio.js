@@ -21,9 +21,7 @@ export default function HomeScreen({ navigation }) {
           </Text>
           <Text style={styles.TextO}>Welcome to Friga early version 0.13 </Text>
           <Button title="Login" onPress={() => navigation.navigate('Login')} style={styles.button}/>
-        <br></br>
-        <br></br>
-        <br></br>
+        
           <Button title="Signup" onPress={() => navigation.navigate('Signup')} style={styles.button}/>
         </View>
 
