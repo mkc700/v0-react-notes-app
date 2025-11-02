@@ -18,3 +18,8 @@ git restore <archivo>
 para la instalacion basica de desarrollo de esta aplicacion, hicimos uso de npm 
 
 npx react-native@latest init TuNombreDeApp
+
+
+## error de servicios remotos
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
