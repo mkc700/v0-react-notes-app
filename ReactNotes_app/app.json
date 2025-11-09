@@ -1,10 +1,10 @@
 {
   "expo": {
-    "name": "ReactNotes_app",
-    "slug": "ReactNotes_app",
+    "name": "FRIGA",
+    "slug": "FRIGA",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./resources/LOGO.jpeg",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -25,10 +25,15 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "expo": {
-      "name": "FRIGA",
-      "slug": "FRIGA",
-      "icon": "./resources/LOGO.jpeg"
-  }
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ]
   }
 }

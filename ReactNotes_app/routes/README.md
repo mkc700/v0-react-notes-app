@@ -39,3 +39,6 @@ Siguientes pasos (opcionales)
 - Reemplazar el botón de texto ☰ por un ícono (p. ej. `react-native-vector-icons`) y aplicarle estilos (margen, tamaño, color).
 - Si prefieres que cada sección del Drawer tenga su propio Stack (para navegación interna), puedo crear un stack por sección y ponerlo como componente del `Drawer.Screen`.
 - Puedo añadir contenido personalizado al Drawer (`drawerContent`) con avatar, enlaces y logout.
+
+
+saquen al puto pedromon y que me la mamen los demas

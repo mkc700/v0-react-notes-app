@@ -30,14 +30,9 @@ export default function DrawerNavigator() {
       <Drawer.Screen
         name="notes_main"
         component={NotesScreen}
-        options={({ navigation }) => ({
-          title: 'Notas',
-          headerLeft: () => (
-            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={{ marginLeft: 16 }}>
-              <Ionicons name="menu" size={28} color="#333" />
-            </TouchableOpacity>
-          ),
-        })}
+        options={{
+          title: 'Mis Notas',
+        }}
       />
 
       <Drawer.Screen
@@ -56,14 +51,9 @@ export default function DrawerNavigator() {
       <Drawer.Screen
         name="calendar"
         component={Calendar}
-        options={({ navigation }) => ({
-          title: 'Calendar',
-          headerLeft: () => (
-            <TouchableOpacity onPress={() => navigation.toggleDrawer()} style={{ marginLeft: 16 }}>
-              <Ionicons name="menu" size={28} color="#333" />
-            </TouchableOpacity>
-          ),
-        })}
+        options={{
+          title: 'Calendario',
+        }}
       />
 
       <Drawer.Screen

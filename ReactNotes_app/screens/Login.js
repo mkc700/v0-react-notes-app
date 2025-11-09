@@ -37,7 +37,7 @@ export default function LoginScreen({ navigation }) {
             <ScrollView contentContainerStyle={styles.scrollContainer}>
                 
                 <View style={styles.header}>
-                    <Image source={require('../resources/LOGO.jpeg')} style={styles.logoImage}/>
+                    <Text style={styles.logo}>📝</Text>
                     <Text style={styles.title}>Bienvenido papu nuevo</Text>
                     <Text style={styles.subtitle}>Ingresa a tu cuenta de Friga</Text>
                 </View>
